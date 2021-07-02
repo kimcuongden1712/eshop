@@ -1,0 +1,8 @@
+rootProject.name = 'e-shop'
+include 'e-common'
+include 'e-web'
+include 'e-web:e-backend'
+findProject(':e-web:e-backend')?.name = 'e-backend'
+include 'e-web:e-fontend'
+findProject(':e-web:e-fontend')?.name = 'e-fontend'
+
