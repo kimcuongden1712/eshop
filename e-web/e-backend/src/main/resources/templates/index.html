@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link th:href="@{/webjars/bootstrap/5.0.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/5.0.0/js/bootstrap.min.js}"></script>
     <title>EShop Admin controller</title>
 </head>
 <body>
-    <h1>Welcom to EShop Admin Controller</h1>
+<main>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Eshop Admin</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a th:href="@{/user}" class="nav-link active" aria-current="page">User</a></li>
+                <li class="nav-item"><a th:href="@{/categories}" class="nav-link">Categories</a></li>
+                <li class="nav-item"><a th:href="@{/brands}" class="nav-link">Brands</a></li>
+                <li class="nav-item"><a th:href="@{/products}" class="nav-link">Products</a></li>
+                <li class="nav-item"><a th:href="@{/customers}" class="nav-link">Customers</a></li>
+                <li class="nav-item"><a th:href="@{/shipping}" class="nav-link">Shipping</a></li>
+                <li class="nav-item"><a th:href="@{/orders}" class="nav-link">Orders</a></li>
+                <li class="nav-item"><a th:href="@{/sales}" class="nav-link">Sales</a></li>
+                <li class="nav-item"><a th:href="@{/report}" class="nav-link">Report</a></li>
+                <li class="nav-item"><a th:href="@{/articles}" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a th:href="@{/menu}" class="nav-link">Menus</a></li>
+                <li class="nav-item"><a th:href="@{/settings}" class="nav-link">Settings</a></li>
+            </ul>
+        </header>
+    </div>
+</main>
 </body>
 </html>

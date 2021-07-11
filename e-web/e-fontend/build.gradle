@@ -1,12 +1,3 @@
 repositories {
     mavenCentral()
 }
-
-dependencies {
-    // Dependency on a local library module
-    implementation project(':e-common')
-
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.5.1'
-
-}
